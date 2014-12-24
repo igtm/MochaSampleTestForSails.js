@@ -1,0 +1,13 @@
+
+[0m[0m
+[0m  SampleController[0m
+[0m    #sample[0m
+[2K[0G    [32m  ✓[0m[90m should return json [0m
+
+[0m  SampleModel[0m
+[0m    #beforeCreate[0m
+[2K[0G    [32m  ✓[0m[90m should make a password encrypted [0m
+
+
+[92m [0m[32m 2 passing[0m[90m (14ms)[0m
+
