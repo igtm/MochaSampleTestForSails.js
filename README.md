@@ -20,6 +20,6 @@ and then, do `grunt test` to execute the test.
 
 
 ### References
-- https://github.com/pghalliday/grunt-mocha-test
-- http://www.tysoncadenhead.com/blog/unit-testing-sails-js-applications-with-mocha#.VJmTlAgw
-- https://github.com/fdvj/wolfpack
+- [grunt-mocha-test](https://github.com/pghalliday/grunt-mocha-test)
+- [chai](https://github.com/chaijs/chai)
+- [sinon](https://github.com/cjohansen/Sinon.JS)

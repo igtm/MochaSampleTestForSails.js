@@ -54,8 +54,8 @@ What would you like Sails to do?
 
 [0m  SampleModel[0m
 [0m    #beforeCreate[0m
-[2K[0G    [32m  ✓[0m[90m should make a password encrypted [0m[31m(281ms)[0m
+[2K[0G    [32m  ✓[0m[90m should make a password encrypted [0m[31m(134ms)[0m
 
 
-[92m [0m[32m 2 passing[0m[90m (3s)[0m
+[92m [0m[32m 2 passing[0m[90m (4s)[0m
 
