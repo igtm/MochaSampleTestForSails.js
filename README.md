@@ -9,6 +9,7 @@
 
 and then, do `grunt test` to execute the test.
 
+
 ### Tips
 
 - if you want Grunt to watch code changes, take the following steps.
@@ -17,6 +18,7 @@ and then, do `grunt test` to execute the test.
     2. In `tasks/register/test.js`,and add `'watch:test'`.
 
 - if you don't wanna wait for lifting sails server, use [wolfpack](https://github.com/fdvj/wolfpack) instead of bootstrap.spec.js
+
 
 
 ### References
