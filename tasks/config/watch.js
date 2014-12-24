@@ -20,7 +20,11 @@ module.exports = function(grunt) {
 			// API files to watch:
 			files: ['api/**/*']
 		},
-		assets: {
+        //test: {
+        //    files: ['test/**/*.spec.js','api/**/*'],
+        //    tasks: ['test']
+        //},
+        assets: {
 
 			// Assets to watch:
 			files: ['assets/**/*', 'tasks/pipeline.js'],
