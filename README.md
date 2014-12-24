@@ -7,13 +7,19 @@
 - creating some test files：　under the test directory
 - creating two config files：　tasks/config/mochaTest.js, tasks/register/test.js,
 
-
 and then, do `grunt test` to execute the test.
 
-- if you don't wanna wait for lifting sails server, use wolfpack instead of bootstrap.spec.js
+### Tips
+
+- if you want Grunt to watch code changes, take the following steps.
+
+    1. In `tasks/config/watch.js`, add `test: { files: ['FilePath'], tasks: ['test'] }`.
+    2. In `tasks/register/test.js`,and add `'watch:test'`.
+
+- if you don't wanna wait for lifting sails server, use [wolfpack](https://github.com/fdvj/wolfpack) instead of bootstrap.spec.js
 
 
-### reference
+### References
 - https://github.com/pghalliday/grunt-mocha-test
 - http://www.tysoncadenhead.com/blog/unit-testing-sails-js-applications-with-mocha#.VJmTlAgw
 - https://github.com/fdvj/wolfpack
