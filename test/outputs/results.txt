@@ -1,0 +1,61 @@
+
+[0m[0m
+-----------------------------------------------------------------
+
+ Excuse my interruption, but it looks like this app
+ does not have a project-wide "migrate" setting configured yet.
+ (perhaps this is the first time you're lifting it with models?)
+ 
+ In short, this setting controls whether/how Sails will attempt to automatically
+ rebuild the tables/collections/sets/etc. in your database schema.
+ You can read more about the "migrate" setting here:
+ http://sailsjs.org/#/documentation/concepts/ORM/model-settings.html?q=migrate
+
+ In a production environment (NODE_ENV==="production") Sails always uses
+ migrate:"safe" to protect inadvertent deletion of your data.
+ However during development, you have a few other options for convenience:
+
+ 1. safe  - never auto-migrate my database(s). I will do it myself (by hand) 
+ 2. alter - auto-migrate, but attempt to keep my existing data (experimental)
+ 3. drop  - wipe/drop ALL my data and rebuild models every time I lift Sails
+
+What would you like Sails to do?
+
+[32minfo: [39mTo skip this prompt in the future, set `sails.config.models.migrate`.
+[32minfo: [39m(conventionally, this is done in `config/models.js`)
+
+[33mwarn: [39m** DO NOT CHOOSE "2" or "3" IF YOU ARE WORKING WITH PRODUCTION DATA **
+
+[1G[0Jprompt: [90m?[39m[90m: [39m [13G3
+
+ Temporarily using `sails.config.models.migrate="drop"...
+ (press CTRL+C to cancel-- continuing lift automatically in 0.5 seconds...)
+
+[32minfo: [39m
+[32minfo: [39m
+[32minfo: [39m   Sails              <|
+[32minfo: [39m   v0.10.5             |\
+[32minfo: [39m                      /|.\
+[32minfo: [39m                     / || \
+[32minfo: [39m                   ,'  |'  \
+[32minfo: [39m                .-'.-==|/_--'
+[32minfo: [39m                `--'-------' 
+[32minfo: [39m   __---___--___---___--___---___--___
+[32minfo: [39m ____---___--___---___--___---___--___-__
+[32minfo: [39m
+[32minfo: [39mServer lifted in `/Users/Tomokatsu/home/MochaSampleForSails`
+[32minfo: [39mTo see your app, visit [4mhttp://localhost:1337[24m
+[32minfo: [39mTo shut down Sails, press <CTRL> + C at any time.
+[37m[39m
+[37m[39m
+[0m  SampleController[0m
+[0m    #sample[0m
+[2K[0G    [32m  ✓[0m[90m should return json [0m
+
+[0m  SampleModel[0m
+[0m    #beforeCreate[0m
+[2K[0G    [32m  ✓[0m[90m should make a password encrypted [0m[31m(281ms)[0m
+
+
+[92m [0m[32m 2 passing[0m[90m (3s)[0m
+

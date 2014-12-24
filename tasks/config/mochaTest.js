@@ -6,14 +6,16 @@ module.exports = function(grunt){
         test: {
             options: {
                 reporter: 'spec',
-                captureFile: 'tests/outputs/results.txt', // Optionally capture the reporter output to a file
+                captureFile: 'test/outputs/results.txt', // Optionally capture the reporter output to a file
                 quiet: false, // Optionally suppress output to standard out (defaults to false)
                 clearRequireCache: false, // Optionally clear the require cache before running tests (defaults to false)
-                require: [ function(){ expect = require('chai').expect;},
+                /*require: [ function(){ expect = require('chai').expect;},
                            function(){ sinon = require('sinon');}
-                ]
+                ]*/
+                globals: ['expect','sinon'],
+                timeout: false // Optionally buy time to do `sails lift`
             },
-            src: ['tests/**/*.spec.js']
+            src: ['test/helpers/globals.js','test/**/*.spec.js']
         }
     });
     grunt.loadNpmTasks('grunt-mocha-test');

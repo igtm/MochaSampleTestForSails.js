@@ -1,7 +1,7 @@
 /**
  * Created by Tomokatsu on 14/12/24.
  */
-var Sample = require('../../api/models/Sample.js');
+var Sample = require('../../../api/models/Sample.js');
 describe('SampleModel',function(){
    describe('#beforeCreate',function(){
        it('should make a password encrypted',function(done){
@@ -9,10 +9,9 @@ describe('SampleModel',function(){
            Sample.beforeCreate({
                password: passwordBeforeEncrypted
            },function(e, sample){
-               expect(sample.password).to.equal(passwordBeforeEncrypted);
+               expect(sample.password).not.to.equal(passwordBeforeEncrypted);
+               done();
            });
-
-           done();
        });
    });
 });
